@@ -6,7 +6,7 @@ A simple calculator application built with Python.
 - Addition
 - Subtraction  
 - Multiplication
-- Division
+- Division 
 - User-friendly menu
 
 ## How to Run
