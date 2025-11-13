@@ -17,3 +17,14 @@ if __name__ == "__main__":
 
     # Add to your test section:
     print(f"4 * 3 = {multiply(4, 3)}")
+
+# Adding new a function for ability to divide
+    def divide(a, b):
+        if b == 0:
+            return "Error: Division by zero!"
+        return a / b
+
+
+    # Test it:
+    print(f"10 / 2 = {divide(10, 2)}")
+    print(f"5 / 0 = {divide(5, 0)}")
