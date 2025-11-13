@@ -1,30 +1,144 @@
-# Simple Calculator v1.0
+# from scientific import square_root, logarithm, factorial, sin_function, cos_function
+# COMMENTED OUT until Developer B's work is merged
+
+# Basic Operations (from Developer A)
 def add(a, b):
     return a + b
+
 
 def subtract(a, b):
     return a - b
 
-# Test the functions
+
+def multiply(a, b):
+    return a * b
+
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero!"
+    return a / b
+
+
+def power(a, b):
+    return a ** b
+
+
+def modulus(a, b):
+    if b == 0:
+        return "Error: Modulus by zero!"
+    return a % b
+
+
+# Menu System (Developer C's work)
+def display_main_menu():
+    print("\n" + "=" * 40)
+    print("        ENHANCED CALCULATOR")
+    print("=" * 40)
+    print("1. Basic Operations")
+    print("2. Scientific Operations")
+    print("3. Exit")
+    print("=" * 40)
+
+    choice = input("Enter your choice (1-3): ")
+    return choice
+
+
+def basic_operations():
+    while True:
+        print("\n--- Basic Operations ---")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Power")
+        print("6. Modulus")
+        print("7. Back to Main Menu")
+
+        choice = input("Enter operation choice (1-7): ")
+
+        if choice == '7':
+            return
+
+        if choice in ['1', '2', '3', '4', '5', '6']:
+            try:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+
+                if choice == '1':
+                    result = add(num1, num2)
+                    print(f"Result: {num1} + {num2} = {result}")
+                elif choice == '2':
+                    result = subtract(num1, num2)
+                    print(f"Result: {num1} - {num2} = {result}")
+                elif choice == '3':
+                    result = multiply(num1, num2)
+                    print(f"Result: {num1} × {num2} = {result}")
+                elif choice == '4':
+                    result = divide(num1, num2)
+                    print(f"Result: {num1} ÷ {num2} = {result}")
+                elif choice == '5':
+                    result = power(num1, num2)
+                    print(f"Result: {num1} ^ {num2} = {result}")
+                elif choice == '6':
+                    result = modulus(num1, num2)
+                    print(f"Result: {num1} % {num2} = {result}")
+
+                # Wait for user to continue
+                input("\nPress Enter to continue...")
+
+            except ValueError:
+                print("Error: Please enter valid numbers!")
+                input("Press Enter to continue...")
+        else:
+            print("Invalid choice! Please try again.")
+
+
+def scientific_operations():
+    while True:
+        print("\n--- Scientific Operations ---")
+        print("1. Square Root")
+        print("2. Logarithm")
+        print("3. Factorial")
+        print("4. Sine")
+        print("5. Cosine")
+        print("6. Back to Main Menu")
+
+        choice = input("Enter operation choice (1-6): ")
+
+        if choice == '6':
+            return
+
+        if choice in ['1', '2', '3', '4', '5']:
+            # Show realistic development progress
+            print("🔧 Scientific operations - UNDER DEVELOPMENT")
+            print("   (Waiting for Developer B's scientific module to be merged)")
+            print("   This feature will be fully functional after the next team sync!")
+
+            # Wait for user to continue
+            input("\nPress Enter to continue...")
+        else:
+            print("Invalid choice! Please try again.")
+
+
+def main():
+    print("Welcome to the Enhanced Calculator!")
+    print("This calculator combines basic and scientific operations.")
+
+    while True:
+        choice = display_main_menu()
+
+        if choice == '1':
+            basic_operations()
+        elif choice == '2':
+            scientific_operations()
+        elif choice == '3':
+            print("\nThank you for using the Enhanced Calculator! Goodbye! 👋")
+            break
+        else:
+            print("Invalid choice! Please enter 1, 2, or 3.")
+            input("Press Enter to continue...")
+
+
 if __name__ == "__main__":
-    print("Calculator Started!")
-    print(f"2 + 3 = {add(2, 3)}")
-    print(f"5 - 2 = {subtract(5, 2)}")
-
-  # Adding new function for the ability of multiplication.
-    def multiply(a, b):
-        return a * b
-
-    # Add to your test section:
-    print(f"4 * 3 = {multiply(4, 3)}")
-
-# Adding new a function for ability to divide
-    def divide(a, b):
-        if b == 0:
-            return "Error: Division by zero!"
-        return a / b
-
-
-    # Test it:
-    print(f"10 / 2 = {divide(10, 2)}")
-    print(f"5 / 0 = {divide(5, 0)}")
+    main()
