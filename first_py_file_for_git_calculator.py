@@ -28,4 +28,3 @@ if __name__ == "__main__":
     # Test it:
     print(f"10 / 2 = {divide(10, 2)}")
     print(f"5 / 0 = {divide(5, 0)}")
-# Just a simple comment to see GIT revert commit option how it works
