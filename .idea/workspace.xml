@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac24b5ab-5cc8-49f2-b41a-9f52e5de333a" name="Changes" comment="commit No 6 rem=named python file to &#10;calculator.py">
+    <list default="true" id="ac24b5ab-5cc8-49f2-b41a-9f52e5de333a" name="Changes" comment="commit No 7 rem=named python file to &#10;calculator.py again">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator.py.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -44,7 +49,7 @@
     "Python.first_py_file_for_git_calculator.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/basic-operations",
     "last_opened_file_path": "C:/Users/sangr/PycharmProjects/python-calculator",
     "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
@@ -81,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763067409541</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit No 7 rem=named python file to &#10;calculator.py again">
+      <option name="closed" value="true" />
+      <created>1763068976881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763068976881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit No 6 rem=named python file to &#10;calculator.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit No 6 rem=named python file to &#10;calculator.py" />
+    <MESSAGE value="commit No 7 rem=named python file to &#10;calculator.py again" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit No 7 rem=named python file to &#10;calculator.py again" />
   </component>
 </project>
